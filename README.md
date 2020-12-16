@@ -135,3 +135,58 @@ Also, we have to keep in mind the `++i` *(prefix)* will first increment the valu
 </details>
 
 ---
+
+###### 5. What's the output?
+
+```c
+int i = 0; 
+  
+for(i = 0; i < 3; i++) {
+   if (i = 2)
+      continue; 
+   printf("%d ", i);    
+}  
+```
+
+- A: `0 1 2`
+- B: `0 1`
+- C: `0 1 2 3`
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+There is a difference between comparison and assigning. In this case we are assigning the value of `2` to `i` *(i=2)*, whilst we have to compare them with double equal signs. So, since we've used `continue` the print command will be escaped here. 
+
+</p>
+</details>
+
+---
+
+###### 6. What's the output?
+
+```c
+int i = 1;
+
+while (i < 10)
+   printf ("%d\n", i);
+```
+
+- A: It will print 1 indefinitely
+- B: `1`
+- C: `10`
+- D: `1 2 3 4 5 6 7 8 9`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+We don not increment the `i` at any moment, so the condition will always be true and the value of `i` will be always equal to `1`.
+
+</p>
+</details>
+
+---
