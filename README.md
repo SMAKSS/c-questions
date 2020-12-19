@@ -228,3 +228,45 @@ A dangling pointer is a pointer that points to invalid data or to data which is 
 </details>
 
 ---
+
+###### 9. What is a wild pointer?
+
+- A: A pointer which has not been initialized to anything
+- B: A pointer which points to a garbage memory location
+- C: A pointer which is initialized to NULL
+- D: A pointer which points to a freed memory address
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A and B
+
+A pointer which has not been initialized to anything (not even NULL) is known as a wild pointer. Also, the pointer may be initialized to a non-NULL garbage value that may not be a valid address. So, if any pointer points to uninitialized or garbage location we call it wild pointer.
+
+</p>
+</details>
+
+---
+
+###### 10. What's the output?
+
+```c
+printf("\");
+```
+
+- A: `\`
+- B: `''`
+- C: It will produce a syntax error
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+`\` is an escape sign, but in this particular situation there is nothing to be escaped in the `printf` so, it will escape the `"` _(double quote sign)_ and it will lead to syntax errors, because, there will be no closing quotes in the `printf` anymore.
+
+</p>
+</details>
+
+---
