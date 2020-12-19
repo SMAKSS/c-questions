@@ -6,7 +6,7 @@
 
 It can be used as a tool to prepare yourself for interviews or opening new thoughts on the language itself.
 
-The answer and the short description of it, is available in the **collapsed sections** below the questions.
+The answer and its short description, is available in the **collapsed sections** below the questions.
 </span>
 
 </div>
