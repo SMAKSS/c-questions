@@ -270,3 +270,49 @@ printf("\");
 </details>
 
 ---
+
+###### 11. What's the output?
+
+```c
+printf("'\'");
+```
+
+- A: `\`
+- B: `''`
+- C: It will produce a syntax error
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+`\` is an escape sign, in this particular case it will escape the second `'` *(quote sign)*, so, it won't change anything here and the printed  element will be `''`.
+
+</p>
+</details>
+
+---
+
+###### 12. What's the output?
+
+```c
+printf("\\");
+```
+
+- A: `\`
+- B: `''`
+- C: It will produce a syntax error
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: A
+
+`\` is an escape sign, in this particular case it will escape the second `\`, so, the final output will be `\`.
+
+</p>
+</details>
+
+---
