@@ -287,7 +287,7 @@ printf("'\'");
 
 #### Answer: B
 
-`\` is an escape sign, in this particular case it will escape the second `'` *(quote sign)*, so, it won't change anything here and the printed  element will be `''`.
+`\` is an escape sign, in this particular case it will escape the second `'` _(quote sign)_, so, it won't change anything here and the printed element will be `''`.
 
 </p>
 </details>
@@ -311,6 +311,60 @@ printf("\\");
 #### Answer: A
 
 `\` is an escape sign, in this particular case it will escape the second `\`, so, the final output will be `\`.
+
+</p>
+</details>
+
+---
+
+###### 13. What's the output?
+
+```c
+short int i;
+
+for (i = 32765; i < 32768; i++)
+    printf ("%d\n", i);
+```
+
+- A: `32765 32766 32767`
+- B: `32766 32767 32768`
+- C: It will run indefinitely
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+The max value for `short` variables are `32767`, so, the condition _(`i < 32768`)_ will be never met.
+
+</p>
+</details>
+
+---
+
+###### 14. What's the output?
+
+```c
+float i = 30;
+
+while (f != 31.0) {
+    printf ("%f\n", f);
+    f += 0.1;
+}
+```
+
+- A: `30.1 30.2 30.3 30.4 30.5 30.6 30.7 30.8 30.9`
+- B: `30.000000 30.100000 30.200001 30.300001 30.400002 30.500002 30.600002 30.700003 30.800003 30.900003`
+- C: It will run indefinitely
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+The floating point variables will automatically cast to float variables whether the initialization is int or whatever else. So, `30` will cast to `30.000000`. Because of this in this particular case, the condition will be never met _()_
 
 </p>
 </details>
