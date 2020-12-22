@@ -364,7 +364,33 @@ while (f != 31.0) {
 
 #### Answer: C
 
-The floating point variables will automatically cast to float variables whether the initialization is int or whatever else. So, `30` will cast to `30.000000`. Because of this in this particular case, the condition will be never met _()_
+The floating point variables will automatically cast to float variables, whether the initialization is int or whatever else. So, `30` will cast to `30.000000`. Because of this, in this particular case, the condition will be never met _(`f != 31.0`)_ so, the code will add up `0.1` to the initial value until memory gets overflow.
+
+</p>
+</details>
+
+---
+
+###### 15. What's the output?
+
+```c
+int i = 0;
+
+while(i<=5);
+printf("%d\n", i);
+```
+
+- A: `0 1 2 3 4 5`
+- B: `0 1 2 3 4`
+- C: `0.0 1.0 2.0 3.0 4.0 5.0`
+- D: It won't print anything
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+If you take a closer look at the snippet you will notice _(`while(i<=5);`)_ a semicolon _(`;`)_ after the `while` statement, so, it will produce a null statement inside the `while` loop _(`while(i<=5){ ; }`)_ and the snippet will be executing indefinitely because of that and never reaches the `printf` expression.
 
 </p>
 </details>
