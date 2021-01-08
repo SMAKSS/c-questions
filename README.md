@@ -24,13 +24,13 @@ while (x --> 0)
 
 - A: It will produce a syntax error
 - B: `0`
-- C: It will print `10` indefinitely
-- D: `9 8 7 6 5 4 3 2 1 0`
+- C: `9 8 7 6 5 4 3 2 1 0`
+- D: It will print `10` indefinitely
 
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: D
+#### Answer: C
 
 This is a simple loop over variable `x`. In the loop condition, we just decrementing `x` in each iteration (`x--` or `x --` equals to `x = x - 1`) until it gets equal to `0`.
 
